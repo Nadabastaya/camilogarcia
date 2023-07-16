@@ -16,12 +16,40 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: Trajan;
+  src: url('../public/trajan-pro-regular.ttf') format("opentype");
 }
+@font-face {
+  font-family: Trajan-Bold;
+  src: url('../public/trajan-pro-bold.ttf') format("opentype");
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #FFF;
+}
+
+
+
+
+/*  body {
+  background-image: linear-gradient(
+  45deg,
+  hsl(234deg 83% 2%) 0%,
+  hsl(251deg 69% 5%) 13%,
+  hsl(257deg 67% 7%) 25%,
+  hsl(253deg 64% 10%) 37%,
+  hsl(246deg 63% 12%) 50%,
+  hsl(240deg 63% 14%) 63%,
+  hsl(236deg 72% 15%) 75%,
+  hsl(233deg 84% 17%) 87%,
+  hsl(230deg 98% 17%) 100%
+);
+background-size: cover;
+background-attachment: fixed;
+ } */
