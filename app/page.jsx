@@ -42,7 +42,7 @@ export default function Home() {
   return (
     <div className=" bg-gray-900 flex flex-col">
       <Navbar />
-      <div className=" ">
+      <div>
         <div id="header">
           <Header />
         </div>
