@@ -8,8 +8,16 @@ const About = () => {
     <div className="flex flex-col p-6 md:px-10 lg:p-12 xl:p-20 xl:h-screen 2xl:py-20 2xl:px-96 ">
       <div className="flex flex-grow flex-col items-center ">
         <div className="grid md:grid-cols-3 md:grid-rows-3 gap-4">
-          <div className="text-center  md:text-left md:col-span-2 text-5xl xl:text-6xl 2xl:text-7x1" id="1">WHO AM I?</div>
-          <div className="md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-2 text-lg md:text-md lg:text-xl xl:text-2xl" id="2">
+          <div
+            className="text-center  md:text-left md:col-span-2 text-5xl xl:text-6xl 2xl:text-7x1"
+            id="1"
+          >
+            WHO AM I?
+          </div>
+          <div
+            className="md:col-span-2 md:row-span-2 md:col-start-1 md:row-start-2 text-lg md:text-md lg:text-xl xl:text-2xl"
+            id="2"
+          >
             Desarrollador fullstack con más de 2 años de experiencia trabajando
             con distintas tecnologías. Siempre en continuo aprendizaje para
             estar al día con las nuevas actualizaciones del munndo TI. Gracias a
@@ -33,12 +41,16 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className="md:row-span-4 md:col-start-3 md:row-start-1 flex items-center justify-center lg:justify-end" id="4">
+          <div
+            className="md:row-span-4 md:col-start-3 md:row-start-1 flex items-center justify-center lg:justify-end"
+            id="4"
+          >
             <Image
               className="rounded-lg lg:w-[250px] xl:w-[270px] 2xl:w-[350px]"
               src={"/me.jpeg"}
               width={300}
               height={300}
+              alt=""
             />
           </div>
         </div>
@@ -52,6 +64,7 @@ const About = () => {
                 src={"/skills/html-5.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -60,6 +73,7 @@ const About = () => {
                 src={"/skills/css3.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -68,6 +82,7 @@ const About = () => {
                 src={"/skills/javascript.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -84,6 +99,7 @@ const About = () => {
                 src={"/skills/next.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -92,6 +108,7 @@ const About = () => {
                 src={"/skills/tailwind-css.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -100,6 +117,7 @@ const About = () => {
                 src={"/skills/styled-components-48.png"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -108,6 +126,7 @@ const About = () => {
                 src={"/skills/nodejs.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -116,6 +135,7 @@ const About = () => {
                 src={"/skills/express-js.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -132,6 +152,7 @@ const About = () => {
                 src={"/skills/dot-net-core.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -140,6 +161,7 @@ const About = () => {
                 src={"/skills/java.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -148,6 +170,7 @@ const About = () => {
                 src={"/skills/sql-server.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -156,6 +179,7 @@ const About = () => {
                 src={"/skills/oracle.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -164,6 +188,7 @@ const About = () => {
                 src={"/skills/mongodb.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -172,6 +197,7 @@ const About = () => {
                 src={"/skills/mysql.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -180,6 +206,7 @@ const About = () => {
                 src={"/skills/docker.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -188,6 +215,7 @@ const About = () => {
                 src={"/skills/azure.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -196,6 +224,7 @@ const About = () => {
                 src={"/skills/aws.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -204,6 +233,7 @@ const About = () => {
                 src={"/skills/git.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -212,6 +242,7 @@ const About = () => {
                 src={"/skills/github.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -220,6 +251,7 @@ const About = () => {
                 src={"/skills/bitbucket.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
             <div className="bg-gray-700 rounded-md hover:border-2 w-14 h-14 lg:w-14 lg:h-14 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20 flex justify-center items-center">
@@ -228,6 +260,7 @@ const About = () => {
                 src={"/skills/vercel.svg"}
                 width={40}
                 height={40}
+                alt=""
               />
             </div>
           </div>

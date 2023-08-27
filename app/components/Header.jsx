@@ -22,6 +22,7 @@ const Header = () => {
         src={"Developer.svg"}
         width={500}
         height={500}
+        alt=""
       />
     </div>
   );
