@@ -24,15 +24,4 @@ const Header = () => {
 };
 
 export default Header;
-/* <div className="md:w-4/6 h-screen flex flex-col-reverse md:flex-row items-center gap-2">
-      <div className="flex flex-col gap-6">
-        <div className=" text-6xl 2xl:text-7xl text-[#593da0]">
-          Let's work and have a coffee together.
-        </div>
-        <div className="text-2xl">
-          I'm Camilo, Fullstack Developer. I build simply, interactive and funny
-          web apps!
-        </div>
-      </div>
-      <Image src={"Developer.svg"} width={400} height={500}/>
-    </div> */
+
