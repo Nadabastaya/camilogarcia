@@ -4,17 +4,36 @@ import Link from "next/link";
 import { useState } from "react";
 import OptionTitle from "../components/OptionTitle";
 import Back from "../components/Back";
+import AtroposTest from '../components/Atropos/AtroposTest'
+import Atropos from "atropos/react";
 
 const Extras = () => {
 
   return (
-    <main className="flex flex-col justify-center h-screen items-center font-trajan-bold">
-        <OptionTitle>Extras</OptionTitle>
-        <div className="w-screen px-44 flex flex-col gap-4 flex-grow bg-red-400">
-           
-        </div>
-        <Back />
-    </main>
+
+    <div id="app">
+      {/* Atropos */}
+      <Atropos className="w-[520px] h-[560px] bg-[url('../public/HL.png')]"
+        activeOffset={40}
+        shadow={true}
+        shadowScale={1.05}
+        onEnter={() => console.log('Enter')}
+        onLeave={() => console.log('Leave')}
+        onRotate={(x, y) => console.log('Rotate', x, y)}
+      >
+        <Image 
+        src={'/HL.png'}
+        width={500}
+        height={500}
+        alt="aaa"/>
+      </Atropos>
+    </div>
+
+
+    
+
+    
+
   );
 };
 

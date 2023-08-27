@@ -1,7 +1,16 @@
 "use client";
+import "atropos/css";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Contact from "./components/ContactForm";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Techs from "./components/Technologies";
+import Header from "./components/Header";
+import WebMenu from "./components/WebMenu";
+import MobileMenu from "./components/MobileMenu";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   const [isHovered, setIsHovered] = useState({
@@ -11,6 +20,11 @@ export default function Home() {
     contact: false,
     extras: false,
   });
+  const [selectedMenuItem, setSelectedMenuItem] = useState("");
+
+  const handleMenuItemClick = (menuItem) => {
+    setSelectedMenuItem(menuItem);
+  };
 
   const handleMouseEnter = (key) => {
     setIsHovered((prevState) => ({
@@ -26,121 +40,59 @@ export default function Home() {
     }));
   };
   return (
-    <main className="flex flex-col justify-center items-center h-screen font-trajan-bold">
-      <div className="h-96 flex text-9xl items-center text-center">
-        <span>CAMILO GARCÍA</span>
+    <div className=" bg-gray-900 flex flex-col">
+      <Navbar />
+      <div className=" ">
+        <div id="header">
+          <Header />
+        </div>
+        <div id="about">
+          <About />
+        </div>
+        <div className="bg-red-500  p-6 md:px-20 lg:px-28 xl:px-48 2xl:px-80 text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl flex flex-col gap-2">
+          <div>"New circumstances require new answers"</div>
+          <div className="flex justify-end">Satoru Iwata</div>
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="contact">
+          <Contact />
+        </div>
+        {/* TODO: footer */}
       </div>
-      <div className="flex flex-col justify-center gap-8 text-center text-3xl h-96 w-96">
-        <div
-          onMouseEnter={() => handleMouseEnter("about")}
-          onMouseLeave={() => handleMouseLeave("about")}
-          className={`flex flex-row justify-center items-center h-9`}
-        >
-          {isHovered.about && (
-            <Image
-              src="/menu-icon-left.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="mr-5"
-            />
-          )}
-          <Link href="/about">ABOUT</Link>
-          {isHovered.about && (
-            <Image
-              src="/menu-icon-right.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="ml-5"
-            />
-          )}
-        </div>
-        <div
-          onMouseEnter={() => handleMouseEnter("projects")}
-          onMouseLeave={() => handleMouseLeave("projects")}
-          className={`flex flex-row justify-center items-center h-9`}
-        >
-          {isHovered.projects && <Image
-              src="/menu-icon-left.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="mr-5"
-            />}
-            <Link href='/projects'>PROJECTS</Link>
-          {isHovered.projects && <Image
-              src="/menu-icon-right.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="ml-5"
-            />}
-        </div>
-        <div
-          onMouseEnter={() => handleMouseEnter("technologies")}
-          onMouseLeave={() => handleMouseLeave("technologies")}
-          className={`flex flex-row justify-center items-center h-9`}
-        >
-          {isHovered.technologies && <Image
-              src="/menu-icon-left.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="mr-5"
-            />}
-            <Link href='/technologies'>Technologies</Link>
-          {isHovered.technologies && <Image
-              src="/menu-icon-right.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="ml-5"
-            />}
-        </div>
-        <div
-          onMouseEnter={() => handleMouseEnter("contact")}
-          onMouseLeave={() => handleMouseLeave("contact")}
-          className={`flex flex-row justify-center items-center h-9`}
-        >
-          {isHovered.contact && <Image
-              src="/menu-icon-left.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="mr-5"
-            />}
-            <Link href='/contact'>CONTACT</Link>
-          {isHovered.contact && <Image
-              src="/menu-icon-right.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="ml-5"
-            />}
-        </div>
-        <div
-          onMouseEnter={() => handleMouseEnter("extras")}
-          onMouseLeave={() => handleMouseLeave("extras")}
-          className={`flex flex-row justify-center items-center h-9`}
-        >
-          {isHovered.extras && <Image
-              src="/menu-icon-left.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="mr-5"
-            />}
-            <Link href='/extras'>EXTRAS</Link>
-          {isHovered.extras && <Image
-              src="/menu-icon-right.png"
-              width={36}
-              height={29}
-              alt="hola"
-              className="ml-5"
-            />}
-        </div>
+      <div className="bg-gray-800 flex flex-col gap-4 p-6 items-end md:justify-between">
+
+          <div>GITHUB</div>
+          <div>LINKEDIN</div>
+          <div>MAIL</div>
+          <div>2023 - Camilo García</div>
+
       </div>
-    </main>
+    </div>
   );
+}
+
+{
+  /* <div className="flex overflow-hidden ">
+      <Navbar />
+       <div className=" lg:w-2/6 bg-red-800 h-screen text-white fixed top-0 left-0 flex flex-col">
+     
+      <Navbar />
+      </div>
+      <div className="bg-gray-800 w-4/6 ml-auto overflow-y-auto px-10">
+        <div id="header">
+          <Header />
+        </div>
+        <div id="about">
+        <About />
+        </div>
+        <div id="projects">
+        <Projects />
+        </div>
+        <div id="contact">
+        <Contact />
+        </div>
+      </div>
+    </div> */
 }

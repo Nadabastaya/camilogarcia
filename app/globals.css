@@ -25,12 +25,21 @@
   src: url('../public/trajan-pro-bold.ttf') format("opentype");
 }
 
+/* html {
+  --s: 120px; 
+  
+  --_g: radial-gradient(#0000 70%,#1a2030 71%);
+  background:
+    var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
+    conic-gradient(#0f9177 25%,#fdebad 0 50%,#d34434 0 75%,#b5d999 0);
+  background-size: var(--s) var(--s); 
+} */
+
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: black;
   color: #FFF;
 }
 

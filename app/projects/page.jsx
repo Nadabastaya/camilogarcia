@@ -2,7 +2,7 @@
 import OptionTitle from "../components/OptionTitle";
 import Back from "../components/Back";
 
-const About = () => {
+const Projects = () => {
 
   return (
     <main className="flex flex-col justify-center h-screen items-center font-trajan-bold">
@@ -18,4 +18,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Projects;
