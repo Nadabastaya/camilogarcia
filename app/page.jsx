@@ -50,7 +50,7 @@ export default function Home() {
           <About />
         </div>
         <div className="bg-red-500  p-6 md:px-20 lg:px-28 xl:px-48 2xl:px-80 text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl flex flex-col gap-2">
-          <div>"New circumstances require new answers"</div>
+          <div>&quot;New circumstances require new answers&quot;</div>
           <div className="flex justify-end">Satoru Iwata</div>
         </div>
         <div id="projects">
